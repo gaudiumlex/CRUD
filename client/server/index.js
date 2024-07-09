@@ -15,7 +15,7 @@ app.use(cors({
 }))
 app.use(cookieParser())
 
-mongoose.connect('mongodb://127.0.0.1:27017/student');
+mongoose.connect('mongodb+srv://myselfharshr:1MSAcG5klsAlbcnd@cluster0.enztmf7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
 
 const varifyUser = (req, res, next) => {
     const token = req.cookies.token;
